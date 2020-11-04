@@ -1,0 +1,49 @@
+
+$black : #2C2C2C;
+$orange :#D4804C;
+$yellow : #FFD195;
+$green : #5D9B84;
+$white : #FFFFFF;
+$grey : #C4C4C4;
+$titles1-font : 'Anton', sans-serif;
+$titles2-font : Vast Shadow;
+$content-font : Handlee;
+
+.ulPending {
+    
+    list-style: none;
+    font-size: 19px;
+    color:$green;
+    margin: 0;
+    padding: 0;    
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 10;
+
+
+    .pendingItem{
+        display: flex;
+        justify-content: space-between;
+        margin: 2px;  
+        height: fit-content; 
+        padding: 8px 10px;
+        
+        
+        background-color: $yellow;
+        border-radius: 10px;
+        font-family: $content-font;
+        color: $black;
+
+        div {
+            height: fit-content;
+            width: fit-content;
+            
+            
+          
+            
+
+        }
+    }
+}
+

@@ -1,0 +1,67 @@
+@import "../../App.scss";
+
+.waiter-out{
+    position: absolute;
+    width: 300px;
+    height: 520px;
+    left: 138px;
+    top: 50px;
+    border: 2px solid white;
+    button{
+     @include button-primary;
+      position: absolute;
+      background-color:$c-darkBrown;
+      width: 200px;
+      height: 88px;
+      border-radius: 10px;
+      left: 18%;
+      bottom: 20px;
+    }
+  }
+  .waiter-inner{
+    position: fixed;
+    width: 270px;
+    height: 350px;
+    left: 155px;
+    top: 100px;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    img{
+      width:200px;
+      transform: translateX(40px);
+    }
+  }
+  
+  .chef-out{
+    position: absolute;
+    width: 300px;
+    height: 520px;
+    left: 600px;
+    top: 50px;
+    border: 2px solid white;
+    button{
+      @include button-primary;
+      position: absolute;
+      background-color:$c-green;
+      width: 200px;
+      height: 88px;
+      border-radius: 10px;
+      left: 18%;
+      bottom: 20px;
+    }
+  }
+  .chef-inner{
+    position: fixed;
+    width: 270px;
+    height: 350px;
+    left: 618px;
+    top: 100px;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    img{
+      width:200px;
+      transform: rotate(35deg) translateX(50px);
+    }
+  }

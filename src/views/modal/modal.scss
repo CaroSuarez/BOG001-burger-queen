@@ -1,0 +1,66 @@
+@import '../../App.scss';
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 1000;
+}
+.modal-container{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:$c-bg;
+  border-radius:10px;
+  padding: 30px;
+  z-index: 1000;
+}
+.modal-title{
+  color:white;
+  font-family: 'Handlee', cursive;
+  margin-bottom:2px;
+  margin-top:3px;
+}
+.close-modal{
+  font-weight: 600;
+  color: white;
+  float: right;
+  font-family: 'Handlee';
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  &:hover{
+    background-color:#31313188;
+    border-radius:2px;
+    transform:scale(1.1);
+  }
+}
+.options-label{
+  padding-left: 15px;
+  color:$c-bg;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.option,
+.option-two{
+  align-items: center;
+  background-color:$c-darkBrown;
+  padding:10px;
+  border-radius:5px;
+  font-family: 'Handlee', cursive;
+  margin-bottom:5px;
+}
+.modal-btn{
+  background-color:$c-green;
+  color:$c-bg;
+  font-family: 'Anton', sans-serif;
+  outline:none;
+  border-radius: 5px;
+border:none;
+}

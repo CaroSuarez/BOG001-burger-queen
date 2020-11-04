@@ -1,0 +1,199 @@
+// Main styles
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Handlee&family=Vast+Shadow&display=swap');
+
+// font-family: 'Anton', sans-serif;
+// font-family: 'Handlee', cursive;
+// font-family: 'Vast Shadow', cursive;
+
+
+//Color variables
+$c-bg:#1d1d1d;
+$c-yellow:#FD9301;
+$c-ligthBrown:#FFD195;
+$c-darkBrown:#D4804C;
+$c-red:#E04F4F;
+$c-green:#5D9B84;
+
+body{
+  background: $c-bg;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@mixin subtitles-fontStyle {
+color:$c-darkBrown;
+font-size: 40px;
+font-family: 'Anton', sans-serif;
+}
+
+@mixin button-primary{
+  font-family: 'Anton', sans-serif;
+  border:none;
+  font-size: 30px;
+  color:$c-bg;
+  outline: none;
+  cursor:pointer;
+}
+
+//HEADER COMPO
+.header-nav{
+  width:100%;
+  display:inline-block; 
+}
+.header-text{
+  width:200px;
+  height:auto;
+ 
+  align-items:center;
+  .title{ 
+    position:absolute;
+    left: 10%;
+    font-size:25px;
+    font-family: Vast Shadow;
+    top:-1.5%;
+    color: $c-yellow;
+    font-weight: 50;
+  }
+    .rol-text{
+      margin-top: -50px;
+      margin-left: 110px;
+      color: white;
+      font-weight: 5;
+      font-family: 'Anton', sans-serif;
+    }
+}
+
+
+.menu{
+  margin-top:-65px;
+  padding:2px;
+  font-size:35px;
+  position:relative;
+  float: right;
+  color:white;
+  margin-right:80px;
+  cursor:pointer;
+  &:hover{
+    background-color:#31313188;
+    border-radius:2px;
+    transform:scale(1.1);
+  }
+}
+
+.ul-menu{
+  box-sizing: border-box;
+  display: none;
+  position:relative;
+  float: right;
+width:150px;
+margin-left: -100%;
+background-color:rgba(0, 0, 0, 0.541);
+transition: all .3s ease-in;
+z-index: 1000;
+color:white;
+}
+.li-menu {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid white;
+  &:hover{
+    background-color:rgba(73, 72, 72, 0.541);
+    cursor:pointer;
+  }
+  
+}
+input:checked  ~ .ul-menu{
+  display:block;
+}
+#menu{
+  display: none;
+}
+.logo{
+  float: left;
+  margin-top:2%;
+  width:50px;
+  height:auto;
+}
+.orders-alert{  
+position: absolute;
+left: 80.65%;
+right: 11.64%;
+top: 4%;
+bottom: 26.55%;
+cursor:pointer;
+
+
+  // width:100px;
+  // height:auto;
+  // margin-left:800px;
+  // transform: translateY(-80px);
+}
+
+.pending-order{
+  position: absolute;
+left: 40.07%;
+top: 2%;
+  width:20px;
+  background-color:$c-yellow;
+  border-radius:50%;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  color:$c-bg;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+.waiter-alert{
+  width:50px;
+  height: auto;
+  float:left;
+}
+.header-nav{
+  width:100vw;
+  height: auto;
+}
+.header-item{
+  margin-left:20px;
+  height: 100px;
+}
+
+//ITEM COMP
+.item-box{
+  background-color:$c-ligthBrown;
+  color:black;
+  font-family:'Handlee', cursive;
+  width: 410px;
+  height: 65px;
+  border-radius: 10px;
+  margin-bottom:10px;
+  padding-left:10px;
+  padding-right:20px;
+  text-transform: uppercase;
+  cursor:pointer;
+  &:hover{
+      transform:translateY(-2px);
+  }
+}
+p.item-product {
+  width: 150px;
+}
+.text-left{
+  float:left;
+}
+.text-right{
+  float: right;
+}
+img.icons {
+  width: 25px;
+  cursor:pointer;
+  margin:3px;
+}
+.Orderitem-box div {
+  flex-grow: 0.5;
+}
+.icon-not{
+  font-size:30px;
+}
